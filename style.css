@@ -1,0 +1,104 @@
+body{
+    height: 950px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#container{
+    padding: 40px 60px 20px;
+    background-color: #317458;
+    border: 20px solid #72483a;
+    color: white;   
+    margin: 0 auto;
+    min-width: 750px;
+}
+
+#container-heading{
+    margin-bottom: 40px;
+    font-size: 30px;
+    text-align: center
+}
+
+.question{
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.options{
+    margin-bottom: 20px;
+}
+
+.choices{
+    display: block;
+}
+
+#btn0, #btn1, #btn2, #btn3{
+    width: 100px;
+    margin-right: 20px;
+    border-radius: 0 !important;
+    /* color: white; */
+}
+
+.btn-group{
+    margin-bottom: 5px;
+    /* color: white; */
+}
+
+#error{
+    color: #ddd;
+    height: 25px;
+}
+.hide{
+    display: none !important;
+}
+#score{
+    font-size: 18px;
+    padding-top: 20px;
+}
+
+.pager{
+    margin: 15px 0 40px;
+}
+.pager .btn-primary{
+    border-radius: 8px;
+    width: 90px;
+    margin: 0 10px;
+    min-height: 30px;
+}
+.pager .btn-primary:focus {
+    outline: none;
+}
+
+ @media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    body{
+        height: 100%;
+    }
+    #container{
+        width: 100%;
+        min-width: 0;
+    }
+
+    #btn0, #btn1, #btn2, #btn3{
+        margin-bottom: 5px;
+    }
+
+    .btn-group{
+        width: 250px;
+    }
+
+    #footer{
+        float: left;
+    }
+} 
+
+@media only screen and (max-width: 480px) {
+    #container{
+        padding: 40px 30px 20px;
+    }
+
+    body{
+        height: 550px;
+    }
+}

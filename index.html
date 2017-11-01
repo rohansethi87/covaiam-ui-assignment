@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>QUIZ</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">    
+  </head>
+  <body>
+    <div id="container" class="wrapper">
+        <div id="container-heading"></div>
+        <div class="container-body">
+           <div id="lastPage" class="hide">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>
+                                QUESTIONS
+                            </th>
+                            <th>
+                                ANSWERS
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Question 1</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Question 2</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Question 3</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Question 4</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Question 5</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Question 6</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Question 7</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Question 8</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p id="score"></p>
+            </div>
+            <div class="question" id="question-set"></div>
+            <div class="btn-group" id = "options">
+                <button class="btn btn-primary" id="btn0" value="a" onclick="selectOption(this.id,0)"><span>a. &nbsp</span><span id="opt0"></span></button>
+                <button class="btn btn-primary" id="btn1" value="b" onclick="selectOption(this.id,1)"><span>b. &nbsp</span><span id="opt1"></span></button>
+                <button class="btn btn-primary" id="btn2" value="c" onclick="selectOption(this.id,2)"><span>c. &nbsp</span><span id="opt2"></span></button>
+                <button class="btn btn-primary" id="btn3" value="d" onclick="selectOption(this.id,3)"><span>d. &nbsp</span><span id="opt3"></span></button>
+            </div>
+            <div id="error"></div>
+            <div id="footer">
+                <div class="pager">
+                    <!-- <span><button class ="previous btn-default" onclick="newQuestion('prev')" id="previousQuestion">Previous</button></span> -->
+                    <span><button class ="next btn-primary" onclick="newQuestion('next')" id="nextQuestion">Next</button></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="quiz.js"></script>
+    <script src="app.js"></script>
+     </body>
+</html>
