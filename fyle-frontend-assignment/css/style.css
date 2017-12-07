@@ -1,0 +1,45 @@
+/* search & select */
+.form-group{
+    margin-top: 15px;
+}
+
+.search-field{
+    margin-bottom: 10px;
+}
+
+/* styling for table */
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+
+.table-responsive {
+    border: 0;
+  }
+  
+  .table-responsive > .table, .table-responsive .grid {
+    margin-bottom: 15px;
+  }
+  
+  .table-responsive::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: #eaeaea;
+  }
+  
+  .table-responsive::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+    border-radius: 10px;
+    background-color: #eaeaea;
+  }
+  
+  .table-responsive::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #11c48b;
+  }
+  
+  .table-responsive.keep-left .table tr th, .table-responsive.keep-left .table tr td {
+    text-align: left !important;
+  }
+  
