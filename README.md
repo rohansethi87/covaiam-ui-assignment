@@ -1,1 +1,1 @@
-# covaiam-ui-assignment
+# plain js quiz app
